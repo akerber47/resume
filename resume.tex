@@ -117,18 +117,24 @@ Berkeley, CA 94720-3840 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{jobs}
-\jobhead{2017 (est.)}{University of California, Berkeley}{PhD Mathematics}\\
-Thesis: \emph{Quasi-Fuchsian surface subgroups of
-infinite covolume Kleinian groups}\\
-Supervisor: Ian Agol
+\jobhead{2017 (est.)}{University of California, Berkeley}{PhD Mathematics}
+\begin{myitemize}
+\item Thesis: \emph{Quasi-Fuchsian surface subgroups of
+infinite covolume Kleinian groups}
+
+\item Supervisor: Ian Agol
+\end{myitemize}
 %
 %\dates{2012} MS Mathematics, University of California, Berkeley
 
-\jobhead{2011}{Brown University}{BS Mathematics}\\
-{\it Phi Beta Kappa, magna cum laude, dept.\ honors, David Howell Premium
-(\$5000, 1 awarded/year)}\\
-\qquad GPA: 3.89/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
-\vspace{-4ex}
+\jobhead{2011}{Brown University}{BS Mathematics}
+\begin{myitemize}
+\item \emph{Phi Beta Kappa, magna cum laude, dept.\ honors, David Howell Premium
+(\$5000, 1 awarded/year)}
+
+\item GPA: 3.86/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
+\end{myitemize}
+%\vspace{-4ex}
 \setlength{\columnsep}{-7em}
 
 %\begin{multicols}{2}
@@ -155,26 +161,16 @@ Supervisor: Ian Agol
 
 \begin{jobs}
 
-\excise{
-\jobhead{2012}{Instructor, Calculus}{Berkeley Math Dept}
-\begin{myitemize}
-\item Developed syllabus, lesson plans, homeworks, and exams for 35-student
-summer course.
-\item Prepared and gave lectures and groupwork for 10 hours per week of class
-time.
-\end{myitemize}
-}
-
 \jobhead{2015\,--\,2016}
 {Member of Technical Staff}{Delphix}
 \begin{myitemize}
 
 \item Triaged and root caused all incoming bugs in Oracle Provisioning,
 a major component used daily by more than half of all customers,
-including multiple Fortune 500 companies.
+including 50\verb!+! Fortune 500 companies.
 
 \item Fixed 10\verb!+! high-stakes issues escalated from support, helping
-us retain \$200,000\verb!+!/yr customers.
+retain \$200,000\verb!+!/yr customers.
 
 \item Designed and implemented features and
 stability improvements for the Delphix Oracle platform.
@@ -216,6 +212,15 @@ currently live on Google\verb!+!.
 
 \phantom{Words}
 
+\jobhead{2012}{Instructor}{Berkeley Math Dept}
+\begin{myitemize}
+\item Developed syllabus, lesson plans, homeworks, and exams for 35-student
+summer calculus course.
+\item Taught lectures, groupwork, discussion, and review for 10 hours of class
+time each week.
+\end{myitemize}
+
+\excise{
 \jobhead{2010\,--\,2011}
 {Course Developer and TA, Operating Systems}{Brown CS Dept}
 \begin{myitemize}
@@ -229,7 +234,7 @@ and drivers (keyboard, display, serial, hard disk).
 \item Eliminated frequent platform crashes and sped up student build/deploy
 time by 10x.
 \end{myitemize}
-
+}
 %\phantom{Words}
 %
 %\jobhead{2010\,--\,2011}{Head Lab Consultant}{Brown CS Dept}
@@ -274,7 +279,7 @@ hardware-software interface.
 
 \phantom{Words}
 
-\jobhead{2008\,--}{Teaching Assistant}{Berkeley
+\jobhead{2008\,--\,2015}{Teaching Assistant}{Berkeley
 Math \& Brown CS Depts}
 \vspace{0.5ex}
 \\Taught discussions and reviews, supervised labs, held office hours, graded,
@@ -286,12 +291,14 @@ and wrote solutions.
 \item Operating Systems with Lab
 \item Accelerated Introduction to CS
 \item Discrete Math and Probability
+\item Linear Algebra
 \end{myitemize}
 
 \begin{myitemize}
 \item Numerical Analysis
 \item Number Theory
-\item Calculus (Single- and Multivariable)
+\item Calculus %(Single- and Multivariable)
+\item Multivariable Calculus
 \end{myitemize}
 \end{multicols}
 
@@ -299,17 +306,17 @@ and wrote solutions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\marginlabel{Projects %--- {\tt https://github.com/akerber47}}
+\marginlabel{Projects} %--- {\tt https://github.com/akerber47}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{jobs}
 
-\projecthead{2013\,--}{Haskell Compiler}
+\projecthead{2013\,--2014}{Haskell Compiler}
 \vspace{0.5ex}
 \\Haskell-to-LLVM compiler from scratch, using custom canonical LR(1) parser
 generator. Lexing, parsing, type inference, desugaring,
-and LLVM code generation phases. OCaml.
+and LLVM code generation phases. Incomplete. OCaml.
 
 
 \phantom{Words}
@@ -320,21 +327,36 @@ and LLVM code generation phases. OCaml.
 Sussman). Racket.
 }
 
-\projecthead{2012\,--}{Worksheet Generator}
+\excise{
+\projecthead{2012}{Worksheet Generator}
 \vspace{0.5ex}
 \\Web app to automate math
 worksheet/homework/quiz creation for instructors.
-Has potential to save Berkeley math dept over 500 man-hours per
-semester. Python.
+Had potential to save Berkeley math dept over 500 man-hours per
+semester. Incomplete. Python.
+
+\phantom{Words}
+}
+
+% or 2012
+\projecthead{2012\,--\,2013}{Bestvina--Handel Algorithm}
+\vspace{0.5ex}
+\\Library that uses a sophisticated graph algorithm to
+compute and display train track invariants of surface maps.
+Intended to explicitly solve pseudo-Anosov map conjugacy, a then-open
+problem. Haskell.
 
 \phantom{Words}
 
-% or 2012
-\projecthead{2012\,--}{Bestvina--Handel Algorithm (PhD Research)}
+\projecthead{2010\,--\,2011}{Weenix}
 \vspace{0.5ex}
-\\Library that uses sophisticated graph algorithms to
-compute and display train track invariants of surface maps.
-May yield an explicit solver for pseudo-Anosov map conjugacy (open problem). Haskell.
+\\Teaching OS port from Xen platform to more
+realistic full hardware emulator.
+New
+scheduler, memory management system, dynamic linker/loader,
+interrupt handlers,
+and drivers. Eliminated platform crashes and sped up student build/deploy
+time by 10x. C and x86 assembly.
 \end{jobs}
 
 \excise{
@@ -489,10 +511,10 @@ panels.
 
 \vspace{-0.2ex}
 
-\noindent C, Haskell, Python, shell, OCaml, Scheme
-(Racket), R, Java, C\verb!++!.\\
+\noindent C, Java, Haskell, Python, JavaScript, R, shell, OCaml, Scheme, C\verb!++!.\\
 Linux (Ubuntu,
-Debian, Arch), VCS (svn, hg, git), vim, make, HTML, CSS.
+Debian, Arch), Version control (git, hg, svn, p4), Issue tracking (Jira), Code
+review (Review Board).
 
 \excise{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
