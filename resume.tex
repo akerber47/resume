@@ -1,0 +1,540 @@
+% CV / Resume: Alvin Kerber
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Curriculum Vitae template by Ezra Miller
+%  29 September 2007
+%
+% To anyone downloading this file:
+%
+% If you got this file from someone other than Ezra Miller, then there
+% might be a better version available directly from Ezra's homepage;
+% just type Ezra Miller into Google and you should be able to find it.
+%
+% You may use this file freely as a template for your own CV, or for
+% any other purpose, but please leave these lines and those above them
+% in the file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[10pt,letterpaper]{article}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage[margin=0.7in]{geometry}
+
+\newcommand{\excise}[1]{}
+
+\newcommand{\marginlabel}[1]{\bigskip\noindent{\large{\textsf{\textbf{#1}}}}\bigskip}
+
+%\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
+\newcommand{\jobhead}[3]{{\dates{#1}{\bf #3} --- {#2}}}
+\newcommand{\projecthead}[2]{{\dates{#1}{\bf #2}}}
+
+% For lists with `year1--year2': jobs, honors, activities, and teaching
+\newenvironment{jobs}
+	{\vspace{-2ex}\leftmargini=24.1mm%
+	 \begin{list}%
+		{}
+		{\setlength\labelwidth{22mm}\itemsep=-1.5mm}}
+	{\end{list}\vspace{-2ex}}
+
+\def\dates#1{\item[#1\hfill]}
+
+\def\myname{\Large \bfseries A\normalsize LVIN \Large K\normalsize ERBER}
+
+% this is the environment that controls my base lists
+\newenvironment{myitemize}
+{
+\vspace{-1.1ex}
+    \begin{list}
+{\tiny\raise2.25pt\hbox{$\blacktriangleright$}}{\leftmargin=3ex}
+        \setlength{\topsep}{0pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\partopsep}{0pt}
+        \setlength{\parsep}{0pt}
+        \setlength{\itemsep}{0pt}
+}
+{
+    \end{list}
+\vspace{-0.5ex}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+
+\mbox{}
+\vspace{-13ex}
+\columnsep=0.3in
+\begin{multicols}{3}
+
+\small
+\renewcommand{\baselinestretch}{0.8}
+
+%\emph{School Address} \\
+\noindent Department of Mathematics \\
+University of California, Berkeley \\
+Berkeley, CA 94720-3840 \\
+\normalsize
+
+%\centerline{\Large \bf Curriculum Vitae}
+%
+%\vspace{2ex}
+\phantom{\centerline{(508)\,369\,--\,9318}}
+
+\centerline{\myname}
+
+%\vspace{1ex}
+%
+%\centerline{\textsf{alvin@math.berkeley.edu}}
+%
+%\vspace{1ex}
+%
+%\phantom{\centerline{(508)\,369\,--\,9318}}
+
+\small
+\noindent \phantom{\emph{DOB}: 19 October 1991} \\
+%\emph{Contact} \\
+\phantom{\emph{Citizenship}: USA } \\
+510\,-\,374\,-\,8997 \\
+{\tt alvin@math.berkeley.edu} \\
+{\tt http://math.berkeley.edu/\textasciitilde alvin/} \\
+\normalsize
+\renewcommand{\baselinestretch}{1.0}
+\end{multicols}
+\vspace{-2ex}
+\hrule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+\jobhead{2017 (est.)}{University of California, Berkeley}{PhD Mathematics}\\
+Thesis: \emph{Quasi-Fuchsian surface subgroups of
+infinite covolume Kleinian groups}\\
+Supervisor: Ian Agol
+%
+%\dates{2012} MS Mathematics, University of California, Berkeley
+
+\jobhead{2011}{Brown University}{BS Mathematics}\\
+{\it Phi Beta Kappa, magna cum laude, dept.\ honors, David Howell Premium
+(\$5000, 1 awarded/year)}\\
+\qquad GPA: 3.89/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
+\vspace{-4ex}
+\setlength{\columnsep}{-7em}
+
+%\begin{multicols}{2}
+%{\bf Selected CS courses:}
+%\begin{myitemize}
+%\item Operating Systems with Lab
+%\item Programming Languages
+%\end{myitemize}
+%
+%{\phantom{\bf Selected math courses (graduate-level):}}
+%\begin{myitemize}
+%\item Algorithm Design and Analysis
+%\item Computational Complexity
+%\end{myitemize}
+%\end{multicols}
+
+\end{jobs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Employment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+
+\excise{
+\jobhead{2012}{Instructor, Calculus}{Berkeley Math Dept}
+\begin{myitemize}
+\item Developed syllabus, lesson plans, homeworks, and exams for 35-student
+summer course.
+\item Prepared and gave lectures and groupwork for 10 hours per week of class
+time.
+\end{myitemize}
+}
+
+\jobhead{2015\,--\,2016}
+{Member of Technical Staff}{Delphix}
+\begin{myitemize}
+
+\item Triaged and root caused all incoming bugs in Oracle Provisioning,
+a major component used daily by more than half of all customers,
+including multiple Fortune 500 companies.
+
+\item Fixed 10\verb!+! high-stakes issues escalated from support, helping
+us retain \$200,000\verb!+!/yr customers.
+
+\item Designed and implemented features and
+stability improvements for the Delphix Oracle platform.
+
+\end{myitemize}
+\dates{2015}
+Software Engineering Intern (converted Fall 2015)
+\begin{myitemize}
+\item Implemented a new data management feature across multiple Delphix
+data platforms.
+\end{myitemize}
+
+\phantom{Words}
+
+\jobhead{2014}
+{Software Engineering Intern}{Google}
+\begin{myitemize}
+
+\item Built supervised learning models in R and C\verb!++! to identify
+fake/abusive Google\verb!+! accounts.
+
+%\item Selected input features and wrote large-scale queries and scripts on
+%Google technologies (Flume, Dremel) to gather and process data
+
+%Implemented Python scripts to process general CSV data for input to model
+
+\item Overall classification accuracy $>\!95\%$ and
+false negative rate $<\!25\%$ on test data.
+
+\item Model slated for production use, where it will be the first broad
+classifier to flag and prioritize suspicious accounts
+for further review, saving account reviewer man-hours.
+
+\item Computed first ever rigorous estimate of how many bad accounts are
+currently live on Google\verb!+!.
+
+%Completed flagging pipeline will save many reviewer man-hours
+\end{myitemize}
+
+\phantom{Words}
+
+\jobhead{2010\,--\,2011}
+{Course Developer and TA, Operating Systems}{Brown CS Dept}
+\begin{myitemize}
+\item Ported OS used for teaching from paravirtualized platform to more
+realistic full hardware emulator.
+\item Refactored and ported 25,000 lines of kernel C and x86 assembly code.
+\item Implemented new
+scheduler, memory management system, dynamic linker/loader,
+interrupt handlers,
+and drivers (keyboard, display, serial, hard disk).
+\item Eliminated frequent platform crashes and sped up student build/deploy
+time by 10x.
+\end{myitemize}
+
+%\phantom{Words}
+%
+%\jobhead{2010\,--\,2011}{Head Lab Consultant}{Brown CS Dept}
+%\begin{myitemize}
+%	\item Hired, trained, and supervised 15 student lab employees.
+%	\item Rewrote and streamlined scripts for employee shift scheduling and
+%hours logging.
+%	\item Created and oversaw presentation of new user orientation to over
+%300 students.
+%\end{myitemize}
+%\dates{2009\,--\,2010}
+%	 Sun Lab Consultant (promoted 2010)
+%\begin{myitemize}
+%	\item Performed system maintenance and provided user support for
+%70-machine Linux computer lab.
+%\end{myitemize}
+
+\excise{
+\phantom{Words}
+
+\jobhead{2009}{Course Developer and TA, Accelerated Introduction to CS}
+{Brown CS Dept}
+\begin{myitemize}
+\item Assisted in planning and designing a syllabus for a new course.
+\item Developed, tested, and deployed 8 student projects in Java and Racket
+(PLT Scheme).
+\end{myitemize}
+}
+
+\excise{
+\phantom{Words}
+
+\jobhead{2008\,--\,2009}{Communications Exhibit Intern}{Museum of Science in
+Boston}
+\begin{myitemize}
+\item Designed and implemented Python backend for an interactive
+communications technology exhibit.
+\item Integrated exhibit sensors and motors via configurable RS-232
+hardware-software interface.
+\end{myitemize}
+}
+
+\phantom{Words}
+
+\jobhead{2008\,--}{Teaching Assistant}{Berkeley
+Math \& Brown CS Depts}
+\vspace{0.5ex}
+\\Taught discussions and reviews, supervised labs, held office hours, graded,
+and wrote solutions.
+\vspace{-2ex}
+\setlength{\columnsep}{-7em}
+\begin{multicols}{2}
+\begin{myitemize}
+\item Operating Systems with Lab
+\item Accelerated Introduction to CS
+\item Discrete Math and Probability
+\end{myitemize}
+
+\begin{myitemize}
+\item Numerical Analysis
+\item Number Theory
+\item Calculus (Single- and Multivariable)
+\end{myitemize}
+\end{multicols}
+
+\end{jobs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Projects %--- {\tt https://github.com/akerber47}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+
+\projecthead{2013\,--}{Haskell Compiler}
+\vspace{0.5ex}
+\\Haskell-to-LLVM compiler from scratch, using custom canonical LR(1) parser
+generator. Lexing, parsing, type inference, desugaring,
+and LLVM code generation phases. OCaml.
+
+
+\phantom{Words}
+
+\excise{
+\projecthead{2013\,--}{SICP Student Tools}
+\\Language suite and test cases for students to use with SICP (Abelson and
+Sussman). Racket.
+}
+
+\projecthead{2012\,--}{Worksheet Generator}
+\vspace{0.5ex}
+\\Web app to automate math
+worksheet/homework/quiz creation for instructors.
+Has potential to save Berkeley math dept over 500 man-hours per
+semester. Python.
+
+\phantom{Words}
+
+% or 2012
+\projecthead{2012\,--}{Bestvina--Handel Algorithm (PhD Research)}
+\vspace{0.5ex}
+\\Library that uses sophisticated graph algorithms to
+compute and display train track invariants of surface maps.
+May yield an explicit solver for pseudo-Anosov map conjugacy (open problem). Haskell.
+\end{jobs}
+
+\excise{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Math Research}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+
+{\bf\dates{2012\,--}
+Current research, with Ian Agol}
+\begin{myitemize}
+\item Studying various problems in 3-manifold topology. Currently working on
+using hierarchies of Haken 3-manifolds to prove nontriviality of the
+Reshetikhin--Turaev invariants on such manifolds.
+\end{myitemize}
+
+{\bf \dates{2010 Sum.}
+Langton's Ant, with
+Richard Schwartz}
+\begin{myitemize}
+\item Proved Turing-completeness of generalized Langton's Ant dynamical systems. 
+\end{myitemize}
+
+{\bf\dates{2009 Sum.}
+Norms on $\mathbb{R}^2$, with
+Justin Peters}
+\begin{myitemize}
+\item Proved results on extremal elements in symmetric convex subspaces of the
+space of norms on $\mathbb{R}^2$.
+\end{myitemize}
+\end{jobs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Volunteer Work}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+\dates{2012\,--}
+	Organizer, Triple Rock graduate student seminar, UC Berkeley.
+\dates{2012\,--}
+	Social Coordinator, Berkeley Ballroom.
+\dates{2011}
+	Organizer, Many Cheerful Facts graduate student seminar, UC Berkeley.
+\dates{2010\,--\,2011}
+	Vice President, Mathematics Department Undergraduate
+	Group, Brown University.
+\dates{2010}
+	Interim Coordinator, Symposium for Undergraduates in
+	the Mathematical Sciences, Brown University.
+\dates{2009\,--\,2010}
+	Webmaster, Brown University Chorus.
+\end{jobs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Math Research}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jobs}
+
+{\bf\dates{2012\,--}
+Current research, with Ian Agol}
+\begin{myitemize}
+
+\item Studying various problems in 3-manifold topology. Currently working on
+using hierarchies of Haken 3-manifolds to prove nontriviality of the
+Reshetikhin--Turaev invariants on such manifolds.
+
+\end{myitemize}
+
+{\bf \dates{2010 Summer}
+Langton's Ant, with
+Richard Schwartz}
+\begin{myitemize}
+\item Studied the asymptotic and computational properties of the Langton's Ant
+dynamical system, 
+proved various entropic and measure-theoretic propositions, and 
+obtained conjectures of ergodic behavior and periodic
+point classification which can be generalized to related systems.
+\end{myitemize}
+
+{\bf\dates{2009 Summer}
+Norms on $\mathbb{R}^2$, with
+Justin Peters}
+\begin{myitemize}
+\item Researched the norms on $\mathbb{R}^2$ as a function space with intrinsic
+properties, obtained multiple results concerning the extreme points and Choquet
+integrals over extreme points in a symmetric subspace of the norm space, and
+generalized these results to other symmetry groups and to higher dimensions.
+\end{myitemize}
+\end{jobs}
+%\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Math Service}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{jobs}
+
+\dates{2012\,--}
+	Organizer, Triple Rock graduate student seminar, UC Berkeley.
+\begin{myitemize}
+	\item Created website with Google Calendar backend to support
+``floating-schedule'' seminar.
+	\item Optimized the seminar format to improve speaker retention, talk
+attendance, talk frequency, and audience committment.
+\end{myitemize}
+\dates{2011}
+	Organizer, Many Cheerful Facts graduate student seminar, UC Berkeley.
+\begin{myitemize}
+	\item Found, vetted, and guided speakers for a low-pressure
+introductory graduate student seminar.
+\end{myitemize}
+\dates{2010\,--\,2011}
+	Vice President, Mathematics Department Undergraduate
+	Group, Brown University.
+	%The math DUG, the most active DUG at
+	%Brown, hosts multiple seminars and problem sessions each month
+	%specifically targeted toward undergraduates in mathematics. We also
+	%organize and host the annual Symposium for Undergraduates in the
+	%Mathematical Sciences (SUMS).
+\begin{myitemize}
+	\item Updated and maintained website for the math DUG.
+	\item Helped organize and oversee seminars, problem sessions, and
+panels.
+\end{myitemize}
+\dates{2010}
+	Interim Coordinator, Symposium for Undergraduates in
+	the Mathematical Sciences, Brown University.
+\begin{myitemize}
+	\item Stepped in to
+	organize rooms, set up equipment, prepare handouts, register
+	and direct attendees, and introduce student speakers at SUMS.
+	\item
+	Handled multiple unexpected scenarios when other organizers were
+	unavailable.
+\end{myitemize}
+\end{jobs}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{Languages and Tools}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-0.2ex}
+
+\noindent C, Haskell, Python, shell, OCaml, Scheme
+(Racket), R, Java, C\verb!++!.\\
+Linux (Ubuntu,
+Debian, Arch), VCS (svn, hg, git), vim, make, HTML, CSS.
+
+\excise{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\marginlabel{References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \begin{tabular}{l@{\qquad}l}
+  \begin{tabular}{l}
+  Tom Doeppner \\
+  Department of Computer Science \\
+  Brown University \\
+  Providence, RI 02912 \\
+  {\tt twd@cs.brown.edu} \\
+  \\
+  Christopher Siden \\
+  Delphix Corp. \\
+  275 Middlefield Road, Suite 50 \\
+  Menlo Park, CA 94025 \\
+  {\tt csiden@delphix.com} \\
+  \\
+  \end{tabular}
+   & 
+  \begin{tabular}{l}
+  Dorinda Moulton \\
+  Department of Computer Science \\
+  Brown University \\
+  Providence, RI 02912 \\
+  {\tt djm@cs.brown.edu} \\
+  \\
+  Ian Agol \\
+  Department of Mathematics \\
+  University of California, Berkeley \\
+  Berkeley, CA 94720 \\
+  {\tt ianagol@math.berkeley.edu} \\
+  \\
+  \end{tabular}
+  \end{tabular}
+ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
