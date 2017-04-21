@@ -21,8 +21,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{verbatim}
-\usepackage{multicol}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.95in]{geometry}
 
 \newcommand{\excise}[1]{}
 
@@ -42,7 +41,8 @@
 
 \def\dates#1{\item[#1\hfill]}
 
-\def\myname{\Large \bfseries A\normalsize LVIN \Large K\normalsize ERBER}
+%\def\myname{\bfseries \Large A\normalsize LVIN \Large K\normalsize ERBER}
+\def\myname{\bfseries \LARGE A\large LVIN \LARGE K\large ERBER}
 
 % this is the environment that controls my base lists
 \newenvironment{myitemize}
@@ -69,46 +69,48 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}
 
-\mbox{}
-\vspace{-13ex}
+%\mbox{}
+%\vspace{-13ex}
+\excise{
 \columnsep=0.3in
 \begin{multicols}{3}
 
 \small
-\renewcommand{\baselinestretch}{0.8}
+\noindent 510\,-\,374\,-\,8997 \\
+{\tt akerber47@gmail.com}
+\vfill\null
+\columnbreak
 
-%\emph{School Address} \\
-\noindent Department of Mathematics \\
-University of California, Berkeley \\
-Berkeley, CA 94720-3840 \\
 \normalsize
-
-%\centerline{\Large \bf Curriculum Vitae}
-%
-%\vspace{2ex}
-\phantom{\centerline{(508)\,369\,--\,9318}}
-
-\centerline{\myname}
-
-%\vspace{1ex}
-%
-%\centerline{\textsf{alvin@math.berkeley.edu}}
-%
-%\vspace{1ex}
-%
-%\phantom{\centerline{(508)\,369\,--\,9318}}
+\noindent \centerline{\raisebox{-2.0ex}{\myname}}
+\vfill\null
+\columnbreak
 
 \small
-\noindent \phantom{\emph{DOB}: 19 October 1991} \\
-%\emph{Contact} \\
-\phantom{\emph{Citizenship}: USA } \\
-510\,-\,374\,-\,8997 \\
-{\tt alvin@math.berkeley.edu} \\
-{\tt http://math.berkeley.edu/\textasciitilde alvin/} \\
+\noindent {\tt github.com/akerber47/} \\
+{\tt math.berkeley.edu/\textasciitilde alvin/} \\
+%\vfill\null
+%\columnbreak
 \normalsize
-\renewcommand{\baselinestretch}{1.0}
+
 \end{multicols}
-\vspace{-2ex}
+}
+
+\noindent\begin{tabular}[t]{@{}l}
+{\tt github.com/akerber47/} \\
+{\tt math.berkeley.edu/\textasciitilde alvin/}
+\end{tabular}
+\hfill
+\begin{tabular}[t]{c}
+\raisebox{-2.0ex}{\myname}
+\end{tabular}
+\hfill
+\begin{tabular}[t]{r@{}}
+510\,-\,374\,-\,8997 \\
+{\tt akerber47@gmail.com}
+\end{tabular}
+
+\vspace{1ex}
 \hrule
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,8 +133,8 @@ infinite covolume Kleinian groups}
 
 \jobhead{2011}{Brown University}{BS Mathematics}
 \begin{myitemize}
-\item \emph{Phi Beta Kappa, magna cum laude, dept.\ honors, David Howell Premium
-(\$5000, 1 awarded/year)}
+\item \emph{Phi Beta Kappa, magna cum laude, department honors.}
+%David Howell Premium (\$5000, 1 awarded/year)}
 
 \item GPA: 3.86/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
 \end{myitemize}
@@ -171,11 +173,11 @@ infinite covolume Kleinian groups}
 a major component used daily by more than half of all customers,
 including 50\verb!+! Fortune 500 companies.
 
-\item Fixed 5\verb!+! deal-breaking issues escalated from support, helping
+\item Fixed 5\verb!+! deal-breaking escalated issues, helping
 retain \$200,000\verb!+!/yr customers.
 
 \item Designed and implemented features and
-stability improvements for the Delphix Oracle platform.
+stability improvements for the Oracle platform.
 
 \end{myitemize}
 \dates{2015}
@@ -194,16 +196,16 @@ data platforms.
 {Software Engineering Intern}{Google}
 \begin{myitemize}
 
-\item Built supervised learning models in R and C\verb!++! to flag and
-prioritize suspicious G\verb!+! accounts, saving time spent on manual account review.
+\item Built supervised learning model to flag and prioritize suspicious
+G\verb!+!  accounts for manual review, streamlining the account review process.
 
 %\item Selected input features and wrote large-scale queries and scripts on
 %Google technologies (Flume, Dremel) to gather and process data
 
 %Implemented Python scripts to process general CSV data for input to model
 
-\item Overall classification accuracy $>\!95\%$ and
-false positive rate $<\!25\%$ on test data.
+\item Over $95\%$ classification accuracy and $75\%$ sensitivity on
+test data.
 
 \excise{
 \item Model slated for production use, where it will be the first broad
@@ -212,7 +214,7 @@ for further review, saving account reviewer man-hours.
 }
 
 \item Computed first rigorous estimate of how many bad accounts are
-currently live on Google\verb!+!.
+currently live on G\verb!+!.
 
 %Completed flagging pipeline will save many reviewer man-hours
 \end{myitemize}
@@ -221,10 +223,9 @@ currently live on Google\verb!+!.
 
 \jobhead{2012}{Instructor}{Berkeley Math Dept}
 \begin{myitemize}
-\item Developed syllabus, lesson plans, homeworks, and exams for 35-student
+\item Wrote syllabus, lesson plans, worksheets and exams for 35-student
 summer calculus course.
-\item Taught lectures, groupwork, discussion, and review for 10 hours of class
-time each week.
+\item Taught 10 hours of lectures, groupwork and discussion each week.
 \end{myitemize}
 
 \excise{
@@ -288,10 +289,15 @@ hardware-software interface.
 
 \jobhead{2008\,--\,2015}{Teaching Assistant}{Berkeley
 Math \& Brown CS Depts}
-\vspace{0.5ex}
-\\Taught discussions and reviews, supervised labs, held office hours, graded,
+\begin{myitemize}
+\item Taught discussions and reviews, supervised labs, graded
 and wrote solutions.
-\vspace{-2ex}
+\item Calculus, Multivariable Calculus, Linear Algebra, Numerical Analysis,
+Discrete Math.
+\item Accelerated Introduction to CS, Operating Systems, Operating Systems Lab.
+\end{myitemize}
+
+\excise{
 \setlength{\columnsep}{-7em}
 \begin{multicols}{2}
 \begin{myitemize}
@@ -308,6 +314,7 @@ and wrote solutions.
 \item Multivariable Calculus
 \end{myitemize}
 \end{multicols}
+}
 
 \end{jobs}
 
@@ -321,7 +328,7 @@ and wrote solutions.
 
 \projecthead{2013\,--2014}{Haskell Compiler}
 \vspace{0.5ex}
-\\Haskell-to-LLVM compiler from scratch, using custom canonical LR(1) parser
+\\Haskell-to-LLVM compiler, using hand-written canonical LR(1) parser
 generator. Lexing, parsing, type inference, desugaring,
 and LLVM code generation phases. Incomplete. OCaml.
 
@@ -348,22 +355,21 @@ semester. Incomplete. Python.
 % or 2012
 \projecthead{2012\,--\,2013}{Bestvina--Handel Algorithm}
 \vspace{0.5ex}
-\\Library that uses a sophisticated graph algorithm to
+\\Library that used graph algorithms to
 compute and display train track invariants of surface maps.
-Intended to explicitly solve pseudo-Anosov map conjugacy, a then-open
+Built to solve pseudo-Anosov conjugacy complexity, a then-open
 problem. Haskell.
 
 \phantom{Words}
 
-\projecthead{2010\,--\,2011}{Weenix}
+\projecthead{2010\,--\,2011}{Operating System}
 \vspace{0.5ex}
-\\Teaching OS port from Xen platform to more
-realistic full hardware emulator.
-New
-scheduler, memory management system, dynamic linker/loader,
-interrupt handlers,
-and drivers. Eliminated platform crashes and sped up student build/deploy
-time by 10x. C and x86 assembly.
+\\OS port from Xen platform to full hardware emulator for OS course development.
+New bootloader,
+process scheduling, memory management, linker/loader,
+interrupt handlers
+and drivers. Eliminated platform crashes and sped up student deploy
+time by 10x. C and x86 asm.
 \end{jobs}
 
 \excise{
@@ -512,16 +518,16 @@ panels.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\marginlabel{Languages and Tools}
+\marginlabel{Skills}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{-0.2ex}
-
-\noindent C, Java, Haskell, Python, JavaScript, R, shell, OCaml, Scheme, C\verb!++!.\\
+\noindent Python, C, Java, Haskell, JavaScript, shell, R, OCaml, Scheme, SQL,
+C\verb!++!, Matlab.\\
 Linux (Ubuntu,
-Debian, Arch), Version control (git, hg, svn, p4), Issue tracking (Jira), Code
-review (Review Board).
+Debian, Arch), Version control (git, hg, svn, p4), \LaTeX.
+
+% Issue tracking (Jira), Code review (ReviewBoard)
 
 \excise{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
