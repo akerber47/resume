@@ -20,30 +20,33 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{graphicx}
 \usepackage{verbatim}
-\usepackage[margin=0.95in]{geometry}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
 
+% Block comments for old content
 \newcommand{\archive}[1]{}
 
 \newcommand{\marginlabel}[1]{\bigskip\noindent{\large{\textsf{\textbf{#1}}}}\bigskip}
 
-%\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
+\newcommand{\dates}[1]{\item[#1\hfill]}
+
+% <year>-<year>  <COMPANY> --- <Title>
 \newcommand{\jobhead}[3]{{\dates{#1}{\bf #3} --- {#2}}}
+
+% <year>-<year>  <Title> ....................................... /<Company>/
+%\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
+
+% <year>-<year>  <Project>
 \newcommand{\projecthead}[2]{{\dates{#1}{\bf #2}}}
 
-% For lists with `year1--year2': jobs, honors, activities, and teaching
 \newenvironment{jobs}
-	{\vspace{-2ex}\leftmargini=24.1mm%
-	 \begin{list}%
-		{}
-		{\setlength\labelwidth{22mm}\itemsep=-1.5mm}}
-	{\end{list}\vspace{-2ex}}
+  {\vspace{-2ex}\leftmargini=24.1mm%
+   \begin{list}%
+    {}
+    {\setlength\labelwidth{22mm}\itemsep=-1.5mm}}
+  {\end{list}\vspace{-2ex}}
 
-\def\dates#1{\item[#1\hfill]}
-
-%\def\myname{\bfseries \Large A\normalsize LVIN \Large K\normalsize ERBER}
-\def\myname{\bfseries \LARGE A\large LVIN \LARGE K\large ERBER}
 
 % this is the environment that controls my base lists
 \newenvironment{myitemize}
@@ -76,7 +79,7 @@
 \end{tabular}
 \hfill
 \begin{tabular}[t]{c}
-\raisebox{-2.0ex}{\myname}
+\raisebox{-2.0ex}{\bfseries \LARGE A\large LVIN \LARGE K\large ERBER}
 \end{tabular}
 \hfill
 \begin{tabular}[t]{r@{}}
@@ -113,7 +116,6 @@ David Howell Premium (\$5000, 1 awarded/year)
 
 \item GPA: 3.86/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
 \end{myitemize}
-\setlength{\columnsep}{-7em}
 
 \archive{
 {\bf Selected CS courses:}
@@ -156,8 +158,6 @@ Software Engineering Intern (converted Fall 2015)
 data platforms.
 }
 
-\phantom{Words}
-
 \jobhead{2014}
 {Software Engineering Intern}{Google}
 \begin{myitemize}
@@ -182,16 +182,12 @@ classifier to flag and prioritize suspicious accounts
 for further review, saving account reviewer man-hours.
 }
 
-\phantom{Words}
-
 \jobhead{2012}{Instructor}{Berkeley Math Dept}
 \begin{myitemize}
 \item Wrote syllabus, lesson plans, worksheets and exams for 35-student
 summer calculus course.
 \item Taught 10 hours of lectures, groupwork and discussion each week.
 \end{myitemize}
-
-\phantom{Words}
 
 \jobhead{2008\,--\,2015}{Teaching Assistant}{Berkeley
 Math \& Brown CS Depts}
@@ -268,19 +264,12 @@ hardware-software interface.
 generator. Lexing, parsing, type inference, desugaring,
 and LLVM code generation phases. Incomplete. OCaml.
 
-
-\phantom{Words}
-
-
-% or 2012
 \projecthead{2012\,--\,2013}{Bestvina--Handel Algorithm}
 \vspace{0.5ex}
 \\Library that used graph algorithms to
 compute and display train track invariants of surface maps.
 Built to solve pseudo-Anosov conjugacy complexity, a then-open
 problem. Haskell.
-
-\phantom{Words}
 
 \projecthead{2010\,--\,2011}{Operating System}
 \vspace{0.5ex}
@@ -320,6 +309,8 @@ Debian, Arch), Version control (git, hg, svn, p4).
 Issue tracking (Jira), Code review (ReviewBoard)
 C\verb!++!, Matlab
 \LaTeX
+
+Ballroom / Latin dance (...)
 } % END MORE SKILLS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
