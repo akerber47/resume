@@ -27,7 +27,7 @@
 % Block comments for old content
 \newcommand{\archive}[1]{}
 
-\newcommand{\marginlabel}[1]{\bigskip\noindent{\large{\textsf{\textbf{#1}}}}\bigskip}
+\newcommand{\marginlabel}[1]{\smallskip\noindent{\large{\textsf{\textbf{#1}}}}\smallskip}
 
 \newcommand{\dates}[1]{\item[#1\hfill]}
 
@@ -40,31 +40,18 @@
 % <year>-<year>  <Project>
 \newcommand{\projecthead}[2]{{\dates{#1}{\bf #2}}}
 
+% TODO fix/eliminate this
 \newenvironment{jobs}
-  {\vspace{-2ex}\leftmargini=24.1mm%
+  {\leftmargini=24.1mm%
    \begin{list}%
     {}
-    {\setlength\labelwidth{22mm}\itemsep=-1.5mm}}
-  {\end{list}\vspace{-2ex}}
+    {\setlength\labelwidth{22mm}\itemsep=1.5mm}}
+  {\end{list}}
 
-
-% this is the environment that controls my base lists
-\newenvironment{myitemize}
-{
-\vspace{-1.1ex}
-    \begin{list}
-{\tiny\raise2.25pt\hbox{$\blacktriangleright$}}{\leftmargin=3ex}
-        \setlength{\topsep}{0pt}
-        \setlength{\parskip}{0pt}
-        \setlength{\partopsep}{0pt}
-        \setlength{\parsep}{0pt}
-        \setlength{\itemsep}{0pt}
-}
-{
-    \end{list}
-\vspace{-0.5ex}
-}
-
+% Compact lists with cool triangles!
+\setlist{nosep}
+\setlist[1]{\labelindent=\parindent}
+\setlist[itemize]{label=\tiny\raise2.25pt\hbox{$\blacktriangleright$}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,6 +76,7 @@
 
 \vspace{1ex}
 \hrule
+\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,15 +86,15 @@
 
 \begin{jobs}
 \jobhead{2017 (est.)}{University of California, Berkeley}{PhD Mathematics}
-\begin{myitemize}
+\begin{itemize}
 \item Thesis: \emph{Quasi-Fuchsian surface subgroups of
-infinite covolume Kleinian groups}
+infinite covolume Kleinian groups}.
 
-\item Supervisor: Ian Agol
-\end{myitemize}
+\archive{\item Supervisor: Ian Agol}
+\end{itemize}
 
 \jobhead{2011}{Brown University}{BS Mathematics}
-\begin{myitemize}
+\begin{itemize}
 \item \emph{Phi Beta Kappa, magna cum laude, department honors.}
 
 \archive{
@@ -114,8 +102,8 @@ David Howell Premium (\$5000, 1 awarded/year)
 }
 
 
-\item GPA: 3.86/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00\\
-\end{myitemize}
+\item GPA: 3.86/4.00 \ \ \ CS GPA: 4.00/4.00 \ \ \ Math GPA: 4.00/4.00.
+\end{itemize}
 
 \archive{
 {\bf Selected CS courses:}
@@ -137,7 +125,7 @@ David Howell Premium (\$5000, 1 awarded/year)
 
 \jobhead{2015\,--\,2016}
 {Member of Technical Staff}{Delphix}
-\begin{myitemize}
+\begin{itemize}
 
 \item Triaged and root caused all incoming bugs in Oracle Provisioning,
 a major component used daily by more than half of all customers,
@@ -149,7 +137,8 @@ retain \$200,000\verb!+!/yr customers.
 \item Designed and implemented features and
 stability improvements for the Oracle platform.
 
-\end{myitemize}
+\end{itemize}
+\vspace{-2mm}
 \dates{2015}
 Software Engineering Intern (converted Fall 2015)
 
@@ -160,18 +149,19 @@ data platforms.
 
 \jobhead{2014}
 {Software Engineering Intern}{Google}
-\begin{myitemize}
+\begin{itemize}
 
-\item Built supervised learning model to flag and prioritize suspicious
-G\verb!+!  accounts for manual review, streamlining the account review process.
+\item Built supervised machine learning models to flag and prioritize
+suspicious G\verb!+!  accounts for manual review, streamlining the account
+review process.
 
 \item Over $95\%$ classification accuracy and $75\%$ sensitivity on
 test data.
 
-\item Computed first rigorous estimate of how many bad accounts are
-currently live on G\verb!+!.
+\item Computed first rigorous estimate of how many malicious accounts are
+active on G\verb!+!.
 
-\end{myitemize}
+\end{itemize}
 
 \archive{
 \item Selected input features and wrote large-scale queries and scripts on
@@ -183,27 +173,27 @@ for further review, saving account reviewer man-hours.
 }
 
 \jobhead{2012}{Instructor}{Berkeley Math Dept}
-\begin{myitemize}
-\item Wrote syllabus, lesson plans, worksheets and exams for 35-student
+\begin{itemize}
+\item Created syllabus, lesson plans, and exams for 35-student
 summer calculus course.
-\item Taught 10 hours of lectures, groupwork and discussion each week.
-\end{myitemize}
+\item Taught 10 hours of lectures, groupwork, and discussion each week.
+\end{itemize}
 
 \jobhead{2008\,--\,2015}{Teaching Assistant}{Berkeley
 Math \& Brown CS Depts}
-\begin{myitemize}
-\item Taught discussions and reviews, supervised labs, graded
+\begin{itemize}
+\item Taught discussions and labs, graded,
 and wrote solutions.
 \item Calculus, Multivariable Calculus, Linear Algebra, Numerical Analysis,
 Discrete Math.
 \item Accelerated Introduction to CS, Operating Systems, Operating Systems Lab.
-\end{myitemize}
+\end{itemize}
 
 % PAST JOBS
 \archive{
 \jobhead{2010\,--\,2011}
 {Course Developer and TA, Operating Systems}{Brown CS Dept}
-\begin{myitemize}
+\begin{itemize}
 \item Ported OS used for teaching from paravirtualized platform to more
 realistic full hardware emulator.
 \item Refactored and ported 25,000 lines of kernel C and x86 assembly code.
@@ -213,39 +203,39 @@ interrupt handlers,
 and drivers (keyboard, display, serial, hard disk).
 \item Eliminated frequent platform crashes and sped up student build/deploy
 time by 10x.
-\end{myitemize}
+\end{itemize}
 
 \jobhead{2010\,--\,2011}{Head Lab Consultant}{Brown CS Dept}
-\begin{myitemize}
+\begin{itemize}
 \item Hired, trained, and supervised 15 student lab employees.
 \item Rewrote and streamlined scripts for employee shift scheduling and
 hours logging.
 \item Created and oversaw presentation of new user orientation to over
 300 students.
-\end{myitemize}
+\end{itemize}
 \dates{2009\,--\,2010}
  Sun Lab Consultant (promoted 2010)
-\begin{myitemize}
+\begin{itemize}
 \item Performed system maintenance and provided user support for
 70-machine Linux computer lab.
-\end{myitemize}
+\end{itemize}
 
 \jobhead{2009}{Course Developer and TA, Accelerated Introduction to CS}
 {Brown CS Dept}
-\begin{myitemize}
+\begin{itemize}
 \item Assisted in planning and designing a syllabus for a new course.
 \item Developed, tested, and deployed 8 student projects in Java and Racket
 (PLT Scheme).
-\end{myitemize}
+\end{itemize}
 
 \jobhead{2008\,--\,2009}{Communications Exhibit Intern}{Museum of Science in
 Boston}
-\begin{myitemize}
+\begin{itemize}
 \item Designed and implemented Python backend for an interactive
 communications technology exhibit.
 \item Integrated exhibit sensors and motors via configurable RS-232
 hardware-software interface.
-\end{myitemize}
+\end{itemize}
 } % END PAST JOBS
 
 \end{jobs}
@@ -259,26 +249,25 @@ hardware-software interface.
 \begin{jobs}
 
 \projecthead{2013\,--2014}{Haskell Compiler}
-\vspace{0.5ex}
-\\Haskell-to-LLVM compiler, using hand-written canonical LR(1) parser
+
+\noindent Haskell-to-LLVM compiler, using hand-written canonical LR(1) parser
 generator. Lexing, parsing, type inference, desugaring,
 and LLVM code generation phases. Incomplete. OCaml.
 
-\projecthead{2012\,--\,2013}{Bestvina--Handel Algorithm}
-\vspace{0.5ex}
-\\Library that used graph algorithms to
+\projecthead{2013}{Bestvina--Handel Algorithm}
+
+\noindent Library that used graph algorithms to
 compute and display train track invariants of surface maps.
 Built to solve pseudo-Anosov conjugacy complexity, a then-open
 problem. Haskell.
 
 \projecthead{2010\,--\,2011}{Operating System}
-\vspace{0.5ex}
-\\OS port from Xen platform to full hardware emulator for OS course development.
-New bootloader,
-process scheduling, memory management, linker/loader,
-interrupt handlers
-and drivers. Eliminated platform crashes and sped up student deploy
-time by 10x. C and x86 asm.
+
+\noindent OS port from Xen platform to full hardware emulator to improve the OS
+course.  New bootloader, scheduler, memory management, linker/loader, interrupt
+handlers, and drivers. Improved student deploy time by 10x and prevented
+platform crashes. C and x86 asm.
+
 \end{jobs}
 
 \archive{ % PAST PROJECTS
@@ -337,26 +326,26 @@ Ballroom / Latin dance (...)
 
 {\bf\dates{2012\,--}
 Current research, with Ian Agol}
-\begin{myitemize}
+\begin{itemize}
 \item Studying various problems in 3-manifold topology. Currently working on
 using hierarchies of Haken 3-manifolds to prove nontriviality of the
 Reshetikhin--Turaev invariants on such manifolds.
-\end{myitemize}
+\end{itemize}
 
 {\bf \dates{2010 Sum.}
 Langton's Ant, with
 Richard Schwartz}
-\begin{myitemize}
+\begin{itemize}
 \item Proved Turing-completeness of generalized Langton's Ant dynamical systems. 
-\end{myitemize}
+\end{itemize}
 
 {\bf\dates{2009 Sum.}
 Norms on $\mathbb{R}^2$, with
 Justin Peters}
-\begin{myitemize}
+\begin{itemize}
 \item Proved results on extremal elements in symmetric convex subspaces of the
 space of norms on $\mathbb{R}^2$.
-\end{myitemize}
+\end{itemize}
 \end{jobs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -392,34 +381,34 @@ space of norms on $\mathbb{R}^2$.
 
 {\bf\dates{2012\,--}
 Current research, with Ian Agol}
-\begin{myitemize}
+\begin{itemize}
 
 \item Studying various problems in 3-manifold topology. Currently working on
 using hierarchies of Haken 3-manifolds to prove nontriviality of the
 Reshetikhin--Turaev invariants on such manifolds.
 
-\end{myitemize}
+\end{itemize}
 
 {\bf \dates{2010 Summer}
 Langton's Ant, with
 Richard Schwartz}
-\begin{myitemize}
+\begin{itemize}
 \item Studied the asymptotic and computational properties of the Langton's Ant
 dynamical system, 
 proved various entropic and measure-theoretic propositions, and 
 obtained conjectures of ergodic behavior and periodic
 point classification which can be generalized to related systems.
-\end{myitemize}
+\end{itemize}
 
 {\bf\dates{2009 Summer}
 Norms on $\mathbb{R}^2$, with
 Justin Peters}
-\begin{myitemize}
+\begin{itemize}
 \item Researched the norms on $\mathbb{R}^2$ as a function space with intrinsic
 properties, obtained multiple results concerning the extreme points and Choquet
 integrals over extreme points in a symmetric subspace of the norm space, and
 generalized these results to other symmetry groups and to higher dimensions.
-\end{myitemize}
+\end{itemize}
 \end{jobs}
 %\pagebreak
 
@@ -432,18 +421,18 @@ generalized these results to other symmetry groups and to higher dimensions.
 
 \dates{2012\,--}
 	Organizer, Triple Rock graduate student seminar, UC Berkeley.
-\begin{myitemize}
+\begin{itemize}
 	\item Created website with Google Calendar backend to support
 ``floating-schedule'' seminar.
 	\item Optimized the seminar format to improve speaker retention, talk
 attendance, talk frequency, and audience committment.
-\end{myitemize}
+\end{itemize}
 \dates{2011}
 	Organizer, Many Cheerful Facts graduate student seminar, UC Berkeley.
-\begin{myitemize}
+\begin{itemize}
 	\item Found, vetted, and guided speakers for a low-pressure
 introductory graduate student seminar.
-\end{myitemize}
+\end{itemize}
 \dates{2010\,--\,2011}
 	Vice President, Mathematics Department Undergraduate
 	Group, Brown University.
@@ -452,22 +441,22 @@ introductory graduate student seminar.
 	%specifically targeted toward undergraduates in mathematics. We also
 	%organize and host the annual Symposium for Undergraduates in the
 	%Mathematical Sciences (SUMS).
-\begin{myitemize}
+\begin{itemize}
 	\item Updated and maintained website for the math DUG.
 	\item Helped organize and oversee seminars, problem sessions, and
 panels.
-\end{myitemize}
+\end{itemize}
 \dates{2010}
 	Interim Coordinator, Symposium for Undergraduates in
 	the Mathematical Sciences, Brown University.
-\begin{myitemize}
+\begin{itemize}
 	\item Stepped in to
 	organize rooms, set up equipment, prepare handouts, register
 	and direct attendees, and introduce student speakers at SUMS.
 	\item
 	Handled multiple unexpected scenarios when other organizers were
 	unavailable.
-\end{myitemize}
+\end{itemize}
 \end{jobs}
 }
 
