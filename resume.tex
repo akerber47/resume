@@ -33,7 +33,7 @@
 \newcommand{\dates}[1]{\item[#1\hfill]}
 
 % <year>-<year>  <COMPANY> --- <Title>
-\newcommand{\jobhead}[3]{{\dates{#1}{\bf #3} --- {#2}}}
+\newcommand{\jobhead}[3]{{\dates{#1}{\bf #2} --- {#3}}}
 
 % <year>-<year>  <Title> ....................................... /<Company>/
 %\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
@@ -70,7 +70,7 @@
 \end{tabular}
 \hfill
 \begin{tabular}[t]{r@{}}
-510\,-\,374\,-\,8997 \\
+\verb!+!1\,\,510\,\,374\,\,8997 \\
 \url{alvin@alvinkerber.net}
 \end{tabular}
 
@@ -86,28 +86,56 @@
 
 \begin{jobs}
 
+	\jobhead{2017\,--} {Facebook}{Research Scientist (E4)} \begin{itemize}
 
-\jobhead{2013\,--\,2017} {University of California, Berkeley}{Graduate Student
-Researcher, Mathematics} \begin{itemize}
+\item Studied internal engineer activity data to build models that make
+	predictions of employee behavior and recommendations to help people be
+	more productive.
 
-\item Researched multiple open problems in low-dimensional topology, including
-pseudo-Anosov conjugacy, harmonic maps to trees, and quasi-Fuchsian surface
-subgroups.
+\item Applied cutting-edge ML techniques including context-based embedding
+	features, deep neural networks, and semi-supervised training to attack
+	unsolved research problems arising from noise and lack of labels
+	in employee activity data at company-wide scale (over 10M
+	human activity events per day).
 
-\item Solved the quasi-Fuchsian surface subgroup conjecture for books of
-I-bundles.  Currently preparing paper for submission.
+\item Designed and implemented two end-to-end internal tools to provide
+	suggestions directly to engineers, including data pipelines, ML models,
+	and back- and front-end web code.
+
+\item Suggestions are currently visited by 200\verb!+! engineers each day at
+	high-visibility integration points (internal search bar and on-call
+	dashboard).
+
+\item Taught seminar for 8\verb!+! teammates on various machine learning and
+	inference topics.
 
 \end{itemize}
-\jobhead{2015\,--\,2016}
-{Delphix}{Member of Technical Staff}
+
+\jobhead{2011\,--\,2017} {University of California, Berkeley}{Graduate Student
+Researcher, Mathematics}
 \begin{itemize}
+
+\item Researched multiple open problems in 3-manifold topology, including
+	pseudo-Anosov conjugacy, harmonic maps to trees, and quasi-Fuchsian
+	surface subgroups.
+
+\item Solved the quasi-Fuchsian surface subgroup conjecture for books of
+	I-bundles. \archive{Currently preparing paper for submission.}
+
+\end{itemize}
+
+
+\jobhead{2015\,--\,2016} {Delphix}{Member of Technical Staff} \begin{itemize}
 
 \item Triaged and root caused all incoming bugs in Oracle Provisioning,
 a major component used daily by more than half of all customers,
 including 50\verb!+! Fortune 500 companies.
 
-\item Fixed 5\verb!+! deal-breaking escalated issues, helping
-retain \$200,000\verb!+!/yr customers.
+\archive{
+\item Fixed 5\verb!+! deal-breaking escalated issues, helping retain
+	\$200,000\verb!+!/yr customers.
+
+}
 
 \item Designed and implemented features and
 stability improvements for the Oracle platform.
@@ -126,15 +154,17 @@ data platforms.
 {Google}{Software Engineering Intern}
 \begin{itemize}
 
-\item Built supervised machine learning models to flag and prioritize
-suspicious G\verb!+!  accounts for manual review, streamlining the account
-review process.
+\item Built machine learning models to flag and prioritize suspicious G\verb!+!
+	accounts for manual review, streamlining the account review process.
+
+\archive{
 
 \item Over $95\%$ classification accuracy and $75\%$ sensitivity on
 test data.
 
-\item Computed first rigorous estimate of how many malicious accounts are
-active on G\verb!+!.
+}
+
+\item Computed estimate of how many malicious accounts are active on G\verb!+!.
 
 \end{itemize}
 
@@ -147,14 +177,10 @@ classifier to flag and prioritize suspicious accounts
 for further review, saving account reviewer man-hours.
 }
 
-\archive{
-\jobhead{2012}{Instructor}{Berkeley Math Dept}
-\begin{itemize}
-\item Created syllabus, lesson plans, and exams for 35-student
-summer calculus course.
-\item Taught 10 hours of lectures, groupwork, and discussion each week.
-\end{itemize}
-}
+\archive{ \jobhead{2012}{Instructor}{Berkeley Math Dept} \begin{itemize} \item
+	Created syllabus, lesson plans, and exams for 35-student summer
+	calculus course.  \item Taught 10 hours of lectures, groupwork, and
+discussion each week.  \end{itemize} }
 
 \jobhead{2008\,--\,2015}{University of California, Berkeley \& Brown
 University}{Teaching Assistant}
@@ -224,18 +250,24 @@ hardware-software interface.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{jobs}
-\jobhead{2017}{University of California, Berkeley}{PhD Mathematics}
+%\jobhead{2017}{University of California, Berkeley}{PhD Mathematics}
+\jobhead{2017}{PhD Mathematics}{University of California, Berkeley}
+%
 \begin{itemize}
-\item Thesis: \emph{Quasi-Fuchsian surface subgroups of
-infinite covolume Kleinian groups}.
+%
+\item Thesis: \emph{Quasi-Fuchsian surface subgroups of infinite covolume
+	Kleinian groups}.
 
 \item GPA: 3.92.
 
 \archive{\item Supervisor: Ian Agol}
 \end{itemize}
 
-\jobhead{2011}{Brown University}{BS Mathematics}
+\jobhead{2011}{ScB Mathematics}{Brown University}
+%\jobhead{2011}{Brown University}{ScB Mathematics}
+%
 \begin{itemize}
+%
 \item \emph{Phi Beta Kappa, magna cum laude, department honors.}
 
 \archive{
@@ -256,6 +288,8 @@ David Howell Premium (\$5000, 1 awarded/year)
 }
 
 \end{jobs}
+
+\archive{ % PAST PROJECTS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -289,10 +323,8 @@ prevented platform crashes. C and x86 asm.
 
 \end{jobs}
 
-\archive{ % PAST PROJECTS
-\projecthead{2013\,--}{SICP Student Tools}
-\\Language suite and test cases for students to use with SICP (Abelson and
-Sussman). Racket.
+\projecthead{2013\,--}{SICP Student Tools} \\Language suite and test cases for
+students to use with SICP (Abelson and Sussman). Racket.
 
 \projecthead{2012}{Worksheet Generator}
 \vspace{0.5ex}
@@ -309,9 +341,32 @@ semester. Incomplete. Python.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent Python, C, Java, shell, Haskell, JavaScript, R, OCaml, Scheme,
-C\verb!++!, SQL.\\ Linux (Ubuntu, Debian, Arch), Version control (git, hg, svn,
-p4).
+\noindent
+%
+Python, SQL, C, Java, Haskell. \\
+%
+Machine learning, Pandas, NumPy, Scikit-Learn, PyTorch.  \\
+%
+Command line (including grep, awk, sed), Version control (git, hg).\\
+
+
+\noindent \textit{Also familiar with:
+%
+PHP, JavaScript, C}\verb!++!\textit{, OCaml, Scheme, Rust, Fortran,
+%
+HTML, x86 Assembly,
+%
+R, Matlab, Tensorflow,
+%
+Hive, Presto, Thrift, Buck, GraphQL, React, XHP, JSX,
+%
+Linux (Ubuntu, Debian, Arch),
+%
+Microsoft Excel (pivot tables, vlookup, visualizations), Mathematica, \LaTeX.
+%
+}
+%
+%
 
 \archive{ % MORE SKILLS
 Issue tracking (Jira), Code review (ReviewBoard)
