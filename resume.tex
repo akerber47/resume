@@ -28,12 +28,16 @@
 % Block comments for old content
 \newcommand{\archive}[1]{}
 
-\newcommand{\marginlabel}[1]{\smallskip\noindent{\large{\textsf{\textbf{#1}}}}\smallskip}
+% \newcommand{\marginlabel}[1]{\smallskip\noindent{\large{\textsf{\textbf{#1}}}}\smallskip}
+\newcommand{\marginlabel}[1]{\smallskip\noindent{\large{\textsf{\textbf{#1}}}}}
 
 \newcommand{\dates}[1]{\item[#1\hfill]}
 
 % <year>-<year>  <COMPANY> --- <Title>
 \newcommand{\jobhead}[3]{{\dates{#1}{\bf #2} --- {#3}}}
+
+% <year>-<year>  <COMPANY> --- <Title>
+\newcommand{\jobsubhead}[2]{{\dates{\it (#1)}{\it #2}}}
 
 % <year>-<year>  <Title> ....................................... /<Company>/
 %\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
@@ -61,8 +65,8 @@
 \thispagestyle{empty}
 
 \noindent\begin{tabular}[t]{@{}l}
-\url{www.alvinkerber.net} \\
-\url{github.com/akerber47/}
+\url{https://www.alvinkerber.net} \\
+\url{https://github.com/akerber47/}
 \end{tabular}
 \hfill
 \begin{tabular}[t]{c}
@@ -86,7 +90,53 @@
 
 \begin{jobs}
 
-	\jobhead{2017\,--} {Facebook}{Research Scientist (E4)} \begin{itemize}
+\jobhead{2017\,--} {Facebook}{Research Scientist}
+
+\jobsubhead{2019\,--}{Instagram Ads Ranking, Core Optimization}
+
+\begin{itemize}
+\item Individually delivered features, models, and ranking stack treatments that improved
+	overall IG ads revenue by 2\% or more each year.
+
+\item Applied cutting-edge ML techniques in clustering, graph learning, representation learning,
+	content understanding, and Poincare embedding / hyperbolic manifold regression.
+
+\item Responsible for success of data mining / feature eng area throughout IG ads. Mentored, steered
+	direction, and helped unblock all feature projects across the org.
+	Reviewed all proposed features for ranking impact and return on infra cost.
+
+\item Led refactoring and migration of complex legacy IG feature infrastructure,
+	enabling 10\verb!+! follow-up feature eng projects.
+	Influenced org-level planning and priorities
+	in the separate FB ads infra org. Debugged
+	performnce regressions and migration blockers requiring multi-week investigation.
+
+\item Responsible for quality, stability, and resource consumption of data
+	pipeline codebase throughout IG ads. Established new 12-member data oncall across the
+	org, created expectations and runbook, and built org-wide support structure
+	to ensure oncall success.
+
+\end{itemize}
+
+\jobsubhead{2017\,--\,2019}{ML for Developer Observability}
+\begin{itemize}
+
+\item Shipped 3 green-field internal tools to provide internal situational
+	recommendations and insights to engineers based on previous
+	engineers' behavior. Recommendations were also integrated into company-wide oncall hub and
+	internal search tools.
+
+\item Owned and drove ML direction, modeling approaches, and end-to-end
+	recommendation system architecture on team of 4 engineers.
+
+\item Used collaborative filtering, clustering, and semi-supervised training
+	techniques to extract meaningful insights from large-scale unlabeled
+	employee behavior data.
+
+
+\end{itemize}
+
+\archive{
 
 \item Studied internal engineer activity data to build models that make
 	predictions of employee behavior and recommendations to help people be
@@ -109,66 +159,68 @@
 \item Taught seminar for 8\verb!+! teammates on various machine learning and
 	inference topics.
 
-\end{itemize}
+}
 
+\archive{
 \jobhead{2011\,--\,2017} {University of California, Berkeley}{Graduate Student
 Researcher, Mathematics}
 \begin{itemize}
+
+\item Solved the quasi-Fuchsian surface subgroup conjecture for books of
+	I-bundles. \archive{Currently preparing paper for submission.}
 
 \item Researched multiple open problems in 3-manifold topology, including
 	pseudo-Anosov conjugacy, harmonic maps to trees, and quasi-Fuchsian
 	surface subgroups.
 
-\item Solved the quasi-Fuchsian surface subgroup conjecture for books of
-	I-bundles. \archive{Currently preparing paper for submission.}
-
 \end{itemize}
-
+}
 
 \jobhead{2015\,--\,2016} {Delphix}{Member of Technical Staff} \begin{itemize}
 
-\item Triaged and root caused all incoming bugs in Oracle Provisioning,
-a major component used daily by more than half of all customers,
-including 50\verb!+! Fortune 500 companies.
+\archive{
+\item Designed and implemented features and
+stability improvements for the Oracle platform.
+}
+
+\item Owned and improved Provisioning component of Delphix's
+	Oracle data platform.
+
+\item Responsible for incremental development, production stability, and long-term refactoring /
+	modernization for this key component, used in 50\verb!+! Fortune 500
+	companies' daily workflows and required for over 60\% of Delphix
+	revenue.
 
 \archive{
 \item Fixed 5\verb!+! deal-breaking escalated issues, helping retain
 	\$200,000\verb!+!/yr customers.
-
 }
-
-\item Designed and implemented features and
-stability improvements for the Oracle platform.
 
 \end{itemize}
-\vspace{-2mm}
-\dates{2015}
-Software Engineering Intern (converted Fall 2015)
 
-\archive{
-\item Implemented a new data management feature across multiple Delphix
+\jobhead{2015} {Delphix}{Software Engineering Intern}
+
+\begin{itemize}
+\item Implemented new snapshot-metadata feature across Delphix
 data platforms.
-}
+\end{itemize}
 
 \jobhead{2014}
-{Google}{Software Engineering Intern}
+{Google}{Software Engineering Intern, Machine Learning}
 \begin{itemize}
 
-\item Built machine learning models to flag and prioritize suspicious G\verb!+!
-	accounts for manual review, streamlining the account review process.
+\item Built user-level ML model to estimate malicious Google\verb!+! account rate and
+	surface additional suspicious accounts for manual review.
+
+\end{itemize}
 
 \archive{
-
 \item Over $95\%$ classification accuracy and $75\%$ sensitivity on
 test data.
 
-}
 
 \item Computed estimate of how many malicious accounts are active on G\verb!+!.
 
-\end{itemize}
-
-\archive{
 \item Selected input features and wrote large-scale queries and scripts on
 Google technologies (Flume, Dremel) to gather and process data
 \item Implemented Python scripts to process general CSV data for input to model
@@ -182,6 +234,7 @@ for further review, saving account reviewer man-hours.
 	calculus course.  \item Taught 10 hours of lectures, groupwork, and
 discussion each week.  \end{itemize} }
 
+\archive{
 \jobhead{2008\,--\,2015}{University of California, Berkeley \& Brown
 University}{Teaching Assistant}
 \begin{itemize}
@@ -191,6 +244,7 @@ and wrote solutions.}
 Discrete Math.
 \item Accelerated Introduction to CS, Operating Systems, Operating Systems Lab.
 \end{itemize}
+}
 
 % PAST JOBS
 \archive{
@@ -251,7 +305,7 @@ hardware-software interface.
 
 \begin{jobs}
 %\jobhead{2017}{University of California, Berkeley}{PhD Mathematics}
-\jobhead{2017}{PhD Mathematics}{University of California, Berkeley}
+\jobhead{2011\,--\,2017}{PhD Mathematics}{University of California, Berkeley}
 %
 \begin{itemize}
 %
@@ -263,7 +317,7 @@ hardware-software interface.
 \archive{\item Supervisor: Ian Agol}
 \end{itemize}
 
-\jobhead{2011}{ScB Mathematics}{Brown University}
+\jobhead{2007\,--\,2011}{ScB Mathematics}{Brown University}
 %\jobhead{2011}{Brown University}{ScB Mathematics}
 %
 \begin{itemize}
@@ -337,14 +391,16 @@ semester. Incomplete. Python.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\marginlabel{Skills}
+\marginlabel{Languages}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{0.2ex}
 \noindent
 %
-Python, SQL, C, Java, Haskell. \\
+Python, SQL, C\verb!++!, Java, OCaml, Haskell, C.
 %
+\archive{
 Machine learning, Pandas, NumPy, Scikit-Learn, PyTorch.  \\
 %
 Command line (including grep, awk, sed), Version control (git, hg).\\
@@ -367,7 +423,7 @@ Microsoft Excel (pivot tables, vlookup, visualizations), Mathematica, \LaTeX.
 }
 %
 %
-
+}
 \archive{ % MORE SKILLS
 Issue tracking (Jira), Code review (ReviewBoard)
 C\verb!++!, Matlab
