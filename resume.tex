@@ -37,7 +37,9 @@
 \newcommand{\jobhead}[3]{{\dates{#1}{\bf #2} --- {#3}}}
 
 % <year>-<year>  <COMPANY> --- <Title>
-\newcommand{\jobsubhead}[2]{{\dates{\it (#1)}{\it #2}}}
+% \newcommand{\jobsubhead}[2]{{\dates{\it (#1)}{\it #2}}}
+% \newcommand{\jobsubhead}[2]{{{\it #2}}}
+\newcommand{\jobsubhead}[2]{{{\it #2 (#1)}}}
 
 % <year>-<year>  <Title> ....................................... /<Company>/
 %\newcommand{\jobhead}[3]{\dates{#1}{\bf #2}\hfill{\it #3}}
@@ -65,8 +67,8 @@
 \thispagestyle{empty}
 
 \noindent\begin{tabular}[t]{@{}l}
-\url{https://www.alvinkerber.net} \\
-\url{https://github.com/akerber47/}
+\url{www.alvinkerber.net} \\
+\url{github.com/akerber47/}
 \end{tabular}
 \hfill
 \begin{tabular}[t]{c}
@@ -90,9 +92,9 @@
 
 \begin{jobs}
 
-\jobhead{2017\,--} {Facebook}{Research Scientist}
+\jobhead{2017\,--\,present} {Facebook}{Research Scientist}
 
-\jobsubhead{2019\,--}{Instagram Ads Ranking, Core Optimization}
+\jobsubhead{2019\,--\,present}{Instagram Ads Ranking, Core Optimization}
 
 \begin{itemize}
 \item Individually delivered features, models, and ranking stack treatments that improved
@@ -112,7 +114,7 @@
 	performnce regressions and migration blockers requiring multi-week investigation.
 
 \item Responsible for quality, stability, and resource consumption of data
-	pipeline codebase throughout IG ads. Established new 12-member data oncall across the
+	pipeline codebase throughout IG ads. Established new 10-member data oncall across the
 	org, created expectations and runbook, and built org-wide support structure
 	to ensure oncall success.
 
@@ -129,7 +131,7 @@
 \item Owned and drove ML direction, modeling approaches, and end-to-end
 	recommendation system architecture on team of 4 engineers.
 
-\item Used collaborative filtering, clustering, and semi-supervised training
+\item Used collaborative filtering, clustering, heuristics, and semi-supervised training
 	techniques to extract meaningful insights from large-scale unlabeled
 	employee behavior data.
 
@@ -186,7 +188,7 @@ stability improvements for the Oracle platform.
 \item Owned and improved Provisioning component of Delphix's
 	Oracle data platform.
 
-\item Responsible for incremental development, production stability, and long-term refactoring /
+\item Individually responsible for incremental development, production stability, and long-term refactoring /
 	modernization for this key component, used in 50\verb!+! Fortune 500
 	companies' daily workflows and required for over 60\% of Delphix
 	revenue.
@@ -389,13 +391,14 @@ semester. Incomplete. Python.
 
 } % END PAST PROJECTS
 
+\vspace{-0.2ex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \marginlabel{Languages}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{0.2ex}
+\vspace{0.4ex}
 \noindent
 %
 Python, SQL, C\verb!++!, Java, OCaml, Haskell, C.
